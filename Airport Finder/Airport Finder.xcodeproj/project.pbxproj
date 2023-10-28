@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28260D172AEC60E50079EBEF /* AirportListViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28260D162AEC60E50079EBEF /* AirportListViewUI.swift */; };
+		28260D1C2AEC61E40079EBEF /* HostViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28260D1B2AEC61E40079EBEF /* HostViewUI.swift */; };
+		28924BF02AEBFF0700044F4D /* Airport_FinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28924BEF2AEBFF0700044F4D /* Airport_FinderApp.swift */; };
+		28924BF22AEBFF0700044F4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28924BF12AEBFF0700044F4D /* ContentView.swift */; };
+		28924BF42AEBFF0800044F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28924BF32AEBFF0800044F4D /* Assets.xcassets */; };
+		28924BF72AEBFF0800044F4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28924BF62AEBFF0800044F4D /* Preview Assets.xcassets */; };
+		28924C012AEBFF9900044F4D /* MapViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28924C002AEBFF9900044F4D /* MapViewUI.swift */; };
+		28924C042AEC06CF00044F4D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28924C032AEC06CF00044F4D /* LocationManager.swift */; };
+		28924C092AEC072000044F4D /* DistanceViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28924C082AEC072000044F4D /* DistanceViewUI.swift */; };
+		28CB00062AEC8F810006B342 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CB00052AEC8F810006B342 /* SegmentedControl.swift */; };
+		28CB000B2AEC94080006B342 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 28CB000A2AEC94080006B342 /* Alamofire */; };
+		28CBFFF42AEC85260006B342 /* AviationDataEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFFF32AEC85260006B342 /* AviationDataEndpoint.swift */; };
+		28CBFFF72AEC85310006B342 /* AviationDataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFFF62AEC85310006B342 /* AviationDataGateway.swift */; };
+		28CBFFFB2AEC85430006B342 /* AviationDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFFFA2AEC85430006B342 /* AviationDataResponse.swift */; };
+		28CBFFFD2AEC85480006B342 /* AviationDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFFFC2AEC85480006B342 /* AviationDataRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28260D162AEC60E50079EBEF /* AirportListViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewUI.swift; sourceTree = "<group>"; };
+		28260D1B2AEC61E40079EBEF /* HostViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostViewUI.swift; sourceTree = "<group>"; };
+		28924BEC2AEBFF0700044F4D /* Airport Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airport Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28924BEF2AEBFF0700044F4D /* Airport_FinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport_FinderApp.swift; sourceTree = "<group>"; };
+		28924BF12AEBFF0700044F4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28924BF32AEBFF0800044F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28924BF62AEBFF0800044F4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28924C002AEBFF9900044F4D /* MapViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewUI.swift; sourceTree = "<group>"; };
+		28924C032AEC06CF00044F4D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		28924C082AEC072000044F4D /* DistanceViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewUI.swift; sourceTree = "<group>"; };
+		28924C0A2AEC08C200044F4D /* Airport-Finder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Airport-Finder-Info.plist"; sourceTree = SOURCE_ROOT; };
+		28CB00052AEC8F810006B342 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		28CBFFF32AEC85260006B342 /* AviationDataEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationDataEndpoint.swift; sourceTree = "<group>"; };
+		28CBFFF62AEC85310006B342 /* AviationDataGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationDataGateway.swift; sourceTree = "<group>"; };
+		28CBFFFA2AEC85430006B342 /* AviationDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationDataResponse.swift; sourceTree = "<group>"; };
+		28CBFFFC2AEC85480006B342 /* AviationDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationDataRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28924BE92AEBFF0700044F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CB000B2AEC94080006B342 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28260D142AEC60C60079EBEF /* AirportListView */ = {
+			isa = PBXGroup;
+			children = (
+				28260D152AEC60DD0079EBEF /* View */,
+			);
+			path = AirportListView;
+			sourceTree = "<group>";
+		};
+		28260D152AEC60DD0079EBEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28260D162AEC60E50079EBEF /* AirportListViewUI.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28260D182AEC61D40079EBEF /* HostView */ = {
+			isa = PBXGroup;
+			children = (
+				28260D192AEC61DA0079EBEF /* View */,
+			);
+			path = HostView;
+			sourceTree = "<group>";
+		};
+		28260D192AEC61DA0079EBEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28260D1B2AEC61E40079EBEF /* HostViewUI.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28924BE32AEBFF0700044F4D = {
+			isa = PBXGroup;
+			children = (
+				28924BEE2AEBFF0700044F4D /* Airport Finder */,
+				28924BED2AEBFF0700044F4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28924BED2AEBFF0700044F4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28924BEC2AEBFF0700044F4D /* Airport Finder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28924BEE2AEBFF0700044F4D /* Airport Finder */ = {
+			isa = PBXGroup;
+			children = (
+				28CBFFEA2AEC84BB0006B342 /* Library */,
+				28924C0A2AEC08C200044F4D /* Airport-Finder-Info.plist */,
+				28924C022AEC06C500044F4D /* Utils */,
+				28924BFD2AEBFF7400044F4D /* Modules */,
+				28924BEF2AEBFF0700044F4D /* Airport_FinderApp.swift */,
+				28924BF12AEBFF0700044F4D /* ContentView.swift */,
+				28924BF32AEBFF0800044F4D /* Assets.xcassets */,
+				28924BF52AEBFF0800044F4D /* Preview Content */,
+			);
+			path = "Airport Finder";
+			sourceTree = "<group>";
+		};
+		28924BF52AEBFF0800044F4D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28924BF62AEBFF0800044F4D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28924BFD2AEBFF7400044F4D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				28260D182AEC61D40079EBEF /* HostView */,
+				28260D142AEC60C60079EBEF /* AirportListView */,
+				28924C052AEC070A00044F4D /* DistanceView */,
+				28924BFE2AEBFF7A00044F4D /* MapView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		28924BFE2AEBFF7A00044F4D /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				28924BFF2AEBFF8D00044F4D /* View */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		28924BFF2AEBFF8D00044F4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28924C002AEBFF9900044F4D /* MapViewUI.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28924C022AEC06C500044F4D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				28924C032AEC06CF00044F4D /* LocationManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		28924C052AEC070A00044F4D /* DistanceView */ = {
+			isa = PBXGroup;
+			children = (
+				28924C062AEC071300044F4D /* View */,
+			);
+			path = DistanceView;
+			sourceTree = "<group>";
+		};
+		28924C062AEC071300044F4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28924C082AEC072000044F4D /* DistanceViewUI.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28CB00042AEC8F780006B342 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				28CB00052AEC8F810006B342 /* SegmentedControl.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		28CBFFEA2AEC84BB0006B342 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				28CBFFFE2AEC8E250006B342 /* Common */,
+				28CBFFEB2AEC84BE0006B342 /* Core */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		28CBFFEB2AEC84BE0006B342 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				28CBFFED2AEC84C70006B342 /* DataSource */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		28CBFFED2AEC84C70006B342 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				28CBFFEE2AEC84DD0006B342 /* AviationData */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		28CBFFEE2AEC84DD0006B342 /* AviationData */ = {
+			isa = PBXGroup;
+			children = (
+				28CBFFF22AEC85160006B342 /* DTO */,
+				28CBFFF32AEC85260006B342 /* AviationDataEndpoint.swift */,
+				28CBFFF62AEC85310006B342 /* AviationDataGateway.swift */,
+			);
+			path = AviationData;
+			sourceTree = "<group>";
+		};
+		28CBFFF22AEC85160006B342 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				28CBFFF92AEC853B0006B342 /* Response */,
+				28CBFFF82AEC85380006B342 /* Request */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		28CBFFF82AEC85380006B342 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				28CBFFFC2AEC85480006B342 /* AviationDataRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		28CBFFF92AEC853B0006B342 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				28CBFFFA2AEC85430006B342 /* AviationDataResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		28CBFFFE2AEC8E250006B342 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				28CB00042AEC8F780006B342 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28924BEB2AEBFF0700044F4D /* Airport Finder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28924BFA2AEBFF0800044F4D /* Build configuration list for PBXNativeTarget "Airport Finder" */;
+			buildPhases = (
+				28924BE82AEBFF0700044F4D /* Sources */,
+				28924BE92AEBFF0700044F4D /* Frameworks */,
+				28924BEA2AEBFF0700044F4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Airport Finder";
+			packageProductDependencies = (
+				28CB000A2AEC94080006B342 /* Alamofire */,
+			);
+			productName = "Airport Finder";
+			productReference = 28924BEC2AEBFF0700044F4D /* Airport Finder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28924BE42AEBFF0700044F4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					28924BEB2AEBFF0700044F4D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 28924BE72AEBFF0700044F4D /* Build configuration list for PBXProject "Airport Finder" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28924BE32AEBFF0700044F4D;
+			packageReferences = (
+				28CB00092AEC94080006B342 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 28924BED2AEBFF0700044F4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28924BEB2AEBFF0700044F4D /* Airport Finder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28924BEA2AEBFF0700044F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28924BF72AEBFF0800044F4D /* Preview Assets.xcassets in Resources */,
+				28924BF42AEBFF0800044F4D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28924BE82AEBFF0700044F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28924C042AEC06CF00044F4D /* LocationManager.swift in Sources */,
+				28924C092AEC072000044F4D /* DistanceViewUI.swift in Sources */,
+				28260D1C2AEC61E40079EBEF /* HostViewUI.swift in Sources */,
+				28260D172AEC60E50079EBEF /* AirportListViewUI.swift in Sources */,
+				28CBFFFD2AEC85480006B342 /* AviationDataRequest.swift in Sources */,
+				28CBFFFB2AEC85430006B342 /* AviationDataResponse.swift in Sources */,
+				28924C012AEBFF9900044F4D /* MapViewUI.swift in Sources */,
+				28924BF22AEBFF0700044F4D /* ContentView.swift in Sources */,
+				28CBFFF42AEC85260006B342 /* AviationDataEndpoint.swift in Sources */,
+				28924BF02AEBFF0700044F4D /* Airport_FinderApp.swift in Sources */,
+				28CB00062AEC8F810006B342 /* SegmentedControl.swift in Sources */,
+				28CBFFF72AEC85310006B342 /* AviationDataGateway.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		28924BF82AEBFF0800044F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28924BF92AEBFF0800044F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28924BFB2AEBFF0800044F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Airport Finder/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UTQ2XCYV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Airport-Finder-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show you nearby ariports";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show you the airports near you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you the airports near you.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baltazar.airportfinder.Airport-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		28924BFC2AEBFF0800044F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Airport Finder/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UTQ2XCYV6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Airport-Finder-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need your location to show you nearby ariports";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We need your location to show you the airports near you.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you the airports near you.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baltazar.airportfinder.Airport-Finder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28924BE72AEBFF0700044F4D /* Build configuration list for PBXProject "Airport Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28924BF82AEBFF0800044F4D /* Debug */,
+				28924BF92AEBFF0800044F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28924BFA2AEBFF0800044F4D /* Build configuration list for PBXNativeTarget "Airport Finder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28924BFB2AEBFF0800044F4D /* Debug */,
+				28924BFC2AEBFF0800044F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		28CB00092AEC94080006B342 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		28CB000A2AEC94080006B342 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28CB00092AEC94080006B342 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 28924BE42AEBFF0700044F4D /* Project object */;
+}
