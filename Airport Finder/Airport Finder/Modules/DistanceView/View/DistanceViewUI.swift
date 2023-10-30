@@ -26,6 +26,7 @@ struct DistanceViewUI: View {
 					.frame(height: 120)
 				NavigationLink(destination: {
 					HostViewUI(distance: $distance)
+						.environmentObject(AviationDataGateway())
 				}, label: {
 					Text("Search")
 						.foregroundColor(.white)
