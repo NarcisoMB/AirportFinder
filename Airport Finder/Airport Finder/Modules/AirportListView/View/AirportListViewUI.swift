@@ -17,8 +17,8 @@ struct AirportListViewUI: View {
 					Text(airport.name)
 						.onTapGesture {
 							viewSelection = 0
-							let region = MKCoordinateRegion(center: airport.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-							$manager.region = region
+//							let region = MKCoordinateRegion(center: airport.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+//							$manager.region = region
 
 						}
 				}
@@ -31,5 +31,5 @@ struct AirportListViewUI: View {
 }
 
 #Preview {
-	AirportListViewUI(annotations: .constant([Location(name: "1", coordinate: CLLocationCoordinate2D(latitude: 20.703444, longitude: -101.368224))]), viewSelection: .constant(0))
+	AirportListViewUI(viewSelection: .constant(0), annotations: .constant([Location(name: "1", coordinate: CLLocationCoordinate2D(latitude: 20.703444, longitude: -101.368224))]), manager: .constant(LocationManager()))
 }
