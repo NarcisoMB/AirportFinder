@@ -5,7 +5,7 @@
 import SwiftUI
 import MapKit
 
-struct MapViewUI: View {
+struct MapViewUI: View {	
 	@Binding var manager: LocationManager
 	@Binding var annotations: [Location]
 	
@@ -13,7 +13,6 @@ struct MapViewUI: View {
 		Map(coordinateRegion: $manager.region,
 			interactionModes: .all,
 			showsUserLocation: true,
-			userTrackingMode: .constant(.follow),
 			annotationItems: $annotations
 		) { place in
 			MapPin(coordinate: place.coordinate.wrappedValue)
