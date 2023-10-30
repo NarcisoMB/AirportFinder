@@ -26,7 +26,7 @@ struct HostViewUI: View {
 			if viewSelection == 0 {
 				MapViewUI(manager: $manager, annotations: $annotations)
 			} else if viewSelection == 1 {
-				AirportListViewUI(viewSelection: $viewSelection, annotations: $annotations, manager: $manager)
+				AirportListViewUI(viewSelection: $viewSelection, annotations: $annotations, manager: $manager, hostView: self)
 			}
 			VStack {
 				Spacer()
@@ -56,6 +56,10 @@ struct HostViewUI: View {
 				}
 			}
 		}
+	}
+	
+	func focusAnnotation(_ newManager: LocationManager) {
+		self.manager = newManager
 	}
 }
 
