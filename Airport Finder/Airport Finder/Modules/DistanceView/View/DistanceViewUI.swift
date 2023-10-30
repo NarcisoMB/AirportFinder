@@ -4,16 +4,23 @@
 
 import SwiftUI
 
+fileprivate struct Constants {
+	static var airport = "airport"
+	static var finder = "finder"
+	static var radious = "Radious in km"
+	static var search = "Search"
+}
+
 struct DistanceViewUI: View {
 	@State private var distance: Double = 0
 	
     var body: some View {
 		NavigationView{
 			VStack(spacing: 24) {
-				Text("Airport".uppercased())
+				Text(Constants.airport.uppercased())
 					.font(.system(size: 42))
 					.bold()
-				Text("finder")
+				Text(Constants.finder)
 					.font(.system(size: 32))
 				Spacer()
 					.frame(height: 120)
@@ -21,14 +28,14 @@ struct DistanceViewUI: View {
 					.font(.system(size: 42))
 				Slider(value: $distance, in: 0...500)
 					.padding(.horizontal, 16)
-				Text("Radious in km".uppercased())
+				Text(Constants.radious.uppercased())
 				Spacer()
 					.frame(height: 120)
 				NavigationLink(destination: {
 					HostViewUI(distance: $distance)
 						.environmentObject(AviationDataGateway())
 				}, label: {
-					Text("Search")
+					Text(Constants.search)
 						.foregroundColor(.white)
 						.padding(.vertical)
 						.padding(.horizontal, 120)
