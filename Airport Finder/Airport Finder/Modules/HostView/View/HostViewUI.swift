@@ -13,31 +13,24 @@ fileprivate struct Constants {
 
 
 struct HostViewUI: View {
-	
 	@EnvironmentObject private var aviationDataGateway: AviationDataGateway
 	
-	@StateObject var manager = LocationManager()
-	
-	@State private var favoriteColor = 0
-	
-	@State var annotations = [
-		Location(name: "1", coordinate: CLLocationCoordinate2D(latitude: 20.703444, longitude: -101.368224)),
-		Location(name: "2", coordinate: CLLocationCoordinate2D(latitude: 20.7029818, longitude: -101.3771502)),
-		Location(name: "3", coordinate: CLLocationCoordinate2D(latitude: 20.6743564, longitude: -101.3821713))
-	]
+	@State private var annotations: [Location] = []
+	@State private var manager = LocationManager()
+	@State private var viewSelection = 0
 	
 	@Binding var distance: Double
 	
 	var body: some View {
 		ZStack {
-			if favoriteColor == 0 {
-				MapViewUI(annotations: $annotations)
-			} else if favoriteColor == 1 {
-				AirportListViewUI(annotations: $annotations)
+			if viewSelection == 0 {
+				MapViewUI(manager: $manager, annotations: $annotations)
+			} else if viewSelection == 1 {
+				AirportListViewUI(viewSelection: $viewSelection, annotations: $annotations, manager: $manager)
 			}
 			VStack {
 				Spacer()
-				Picker("What is your favorite color?", selection: $favoriteColor) {
+				Picker("", selection: $viewSelection) {
 					Image(systemName: Constants.map).tag(0)
 					Image(systemName: Constants.airport).tag(1)
 				}
@@ -68,11 +61,4 @@ struct HostViewUI: View {
 
 #Preview {
 	HostViewUI(distance: .constant(10))
-}
-
-extension Double {
-	func roundToDecimal(_ fractionDigits: Int) -> Double {
-		let multiplier = pow(10, Double(fractionDigits))
-		return Darwin.round(self * multiplier) / multiplier
-	}
 }
