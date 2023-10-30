@@ -16,21 +16,23 @@ struct AirportListViewUI: View {
 	
 	var hostView: HostViewUI
 	
-    var body: some View {
+	var body: some View {
 		VStack {
 			List {
 				ForEach(annotations, id: \.name) { airport in
 					Text(airport.name)
 						.onTapGesture {
-							let manager = LocationManager()
-							manager.region = MKCoordinateRegion(
-								center: airport.coordinate,
-								span: MKCoordinateSpan(
-									latitudeDelta: 1,
-									longitudeDelta: 1
+							withAnimation {
+								let manager = LocationManager()
+								manager.region = MKCoordinateRegion(
+									center: airport.coordinate,
+									span: MKCoordinateSpan(
+										latitudeDelta: 1,
+										longitudeDelta: 1
+									)
 								)
-							)
-							hostView.focusAnnotation(manager)
+								hostView.focusAnnotation(manager)
+							}
 							viewSelection = 0
 						}
 				}
@@ -39,7 +41,7 @@ struct AirportListViewUI: View {
 		}
 		.navigationBarBackButtonHidden(true)
 		.navigationTitle(Constants.navTitle)
-    }
+	}
 }
 
 #Preview {
