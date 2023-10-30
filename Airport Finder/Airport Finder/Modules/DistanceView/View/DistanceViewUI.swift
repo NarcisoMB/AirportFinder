@@ -9,13 +9,17 @@ fileprivate struct Constants {
 	static var finder = "finder"
 	static var radious = "Radious in km"
 	static var search = "Search"
+	static var backgroundDistance = "backgroundDistance"
 }
 
 struct DistanceViewUI: View {
 	@State private var distance: Double = 0
 	
-    var body: some View {
-		NavigationView{
+	var body: some View {
+		ZStack {
+			Image(Constants.backgroundDistance)
+				.resizable()
+				.brightness(-0.2)
 			VStack(spacing: 24) {
 				Text(Constants.airport.uppercased())
 					.font(.system(size: 42))
@@ -27,7 +31,7 @@ struct DistanceViewUI: View {
 				Text("\(distance, specifier: "%.0f")")
 					.font(.system(size: 42))
 				Slider(value: $distance, in: 0...500)
-					.padding(.horizontal, 16)
+					.padding(.horizontal, 32)
 				Text(Constants.radious.uppercased())
 				Spacer()
 					.frame(height: 120)
@@ -44,9 +48,9 @@ struct DistanceViewUI: View {
 				})
 			}
 		}
-    }
+	}
 }
 
 #Preview {
-    DistanceViewUI()
+	DistanceViewUI()
 }
