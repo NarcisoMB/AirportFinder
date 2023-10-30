@@ -5,9 +5,6 @@
 import Foundation
 
 class AviationDataGateway: ObservableObject {
-	
-	@Published var airportsInformation: [AirportInformation] = []
-	
 	func nearbyAirports(_ dto: AviationDataRequest, completion: @escaping ([AirportInformation]) -> Void) {
 		let headers = [
 			"X-RapidAPI-Key": "896f18150dmshb8df0aa44dd3d6cp1cb854jsnb8e2ee326ed5",
