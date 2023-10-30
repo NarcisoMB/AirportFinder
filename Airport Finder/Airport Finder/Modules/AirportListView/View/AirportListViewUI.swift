@@ -23,7 +23,13 @@ struct AirportListViewUI: View {
 					Text(airport.name)
 						.onTapGesture {
 							let manager = LocationManager()
-							manager.region = MKCoordinateRegion(center: airport.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+							manager.region = MKCoordinateRegion(
+								center: airport.coordinate,
+								span: MKCoordinateSpan(
+									latitudeDelta: 1,
+									longitudeDelta: 1
+								)
+							)
 							hostView.focusAnnotation(manager)
 							viewSelection = 0
 						}
