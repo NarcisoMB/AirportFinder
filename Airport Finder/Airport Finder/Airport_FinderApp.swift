@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct Airport_FinderApp: App {
+	@State private var isNavigationBarHidden: Bool = true
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			NavigationView{
+				DistanceViewUI()
+					.environmentObject(AviationDataGateway())
+					.navigationBarTitle("")
+					.navigationBarHidden(self.isNavigationBarHidden)
+					.onAppear {
+						self.isNavigationBarHidden = true
+					}
+			}
         }
     }
 }
