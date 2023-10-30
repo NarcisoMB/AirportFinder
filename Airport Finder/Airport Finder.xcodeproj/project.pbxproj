@@ -16,6 +16,7 @@
 		28924C012AEBFF9900044F4D /* MapViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28924C002AEBFF9900044F4D /* MapViewUI.swift */; };
 		28924C042AEC06CF00044F4D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28924C032AEC06CF00044F4D /* LocationManager.swift */; };
 		28924C092AEC072000044F4D /* DistanceViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28924C082AEC072000044F4D /* DistanceViewUI.swift */; };
+		28AD89662AEFF44F00D39713 /* MapEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD89652AEFF44F00D39713 /* MapEntity.swift */; };
 		28CB00062AEC8F810006B342 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CB00052AEC8F810006B342 /* SegmentedControl.swift */; };
 		28CB000B2AEC94080006B342 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 28CB000A2AEC94080006B342 /* Alamofire */; };
 		28CBFFF42AEC85260006B342 /* AviationDataEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFFF32AEC85260006B342 /* AviationDataEndpoint.swift */; };
@@ -36,6 +37,7 @@
 		28924C032AEC06CF00044F4D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		28924C082AEC072000044F4D /* DistanceViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewUI.swift; sourceTree = "<group>"; };
 		28924C0A2AEC08C200044F4D /* Airport-Finder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Airport-Finder-Info.plist"; sourceTree = SOURCE_ROOT; };
+		28AD89652AEFF44F00D39713 /* MapEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapEntity.swift; sourceTree = "<group>"; };
 		28CB00052AEC8F810006B342 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		28CBFFF32AEC85260006B342 /* AviationDataEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationDataEndpoint.swift; sourceTree = "<group>"; };
 		28CBFFF62AEC85310006B342 /* AviationDataGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationDataGateway.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		28924BFE2AEBFF7A00044F4D /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				28AD89642AEFF43B00D39713 /* Entity */,
 				28924BFF2AEBFF8D00044F4D /* View */,
 			);
 			path = MapView;
@@ -175,6 +178,14 @@
 				28924C082AEC072000044F4D /* DistanceViewUI.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		28AD89642AEFF43B00D39713 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				28AD89652AEFF44F00D39713 /* MapEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		28CB00042AEC8F780006B342 /* Extensions */ = {
@@ -334,6 +345,7 @@
 				28260D1C2AEC61E40079EBEF /* HostViewUI.swift in Sources */,
 				28260D172AEC60E50079EBEF /* AirportListViewUI.swift in Sources */,
 				28CBFFFD2AEC85480006B342 /* AviationDataRequest.swift in Sources */,
+				28AD89662AEFF44F00D39713 /* MapEntity.swift in Sources */,
 				28CBFFFB2AEC85430006B342 /* AviationDataResponse.swift in Sources */,
 				28924C012AEBFF9900044F4D /* MapViewUI.swift in Sources */,
 				28924BF22AEBFF0700044F4D /* ContentView.swift in Sources */,
