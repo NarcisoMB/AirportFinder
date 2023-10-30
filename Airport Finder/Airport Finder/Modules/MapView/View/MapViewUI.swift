@@ -6,8 +6,7 @@ import SwiftUI
 import MapKit
 
 struct MapViewUI: View {
-	@StateObject var manager = LocationManager()
-	
+	@Binding var manager: LocationManager
 	@Binding var annotations: [Location]
 	
 	var body: some View {
@@ -25,7 +24,7 @@ struct MapViewUI: View {
 }
 
 #Preview {
-	MapViewUI(annotations: .constant([Location(name: "1", coordinate: CLLocationCoordinate2D(latitude: 20.703444, longitude: -101.368224))]))
+	MapViewUI(manager: .constant(LocationManager()), annotations: .constant([Location(name: "1", coordinate: CLLocationCoordinate2D(latitude: 20.703444, longitude: -101.368224))]))
 }
 
 struct Location: Identifiable {
