@@ -26,9 +26,3 @@ struct MapViewUI: View {
 #Preview {
 	MapViewUI(manager: .constant(LocationManager()), annotations: .constant([Location(name: "1", coordinate: CLLocationCoordinate2D(latitude: 20.703444, longitude: -101.368224))]))
 }
-
-struct Location: Identifiable {
-	let id = UUID()
-	let name: String
-	var coordinate: CLLocationCoordinate2D
-}
