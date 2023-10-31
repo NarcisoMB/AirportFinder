@@ -46,6 +46,9 @@ struct DistanceViewUI: View {
 						.background(.blue)
 						.cornerRadius(10)
 				})
+				.buttonStyle(.plain)
+				.disabled(distance == 0)
+				
 			}
 		}
 	}
