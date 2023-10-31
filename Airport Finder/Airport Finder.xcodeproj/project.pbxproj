@@ -18,7 +18,6 @@
 		28924C092AEC072000044F4D /* DistanceViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28924C082AEC072000044F4D /* DistanceViewUI.swift */; };
 		28AD89662AEFF44F00D39713 /* MapEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD89652AEFF44F00D39713 /* MapEntity.swift */; };
 		28CB00062AEC8F810006B342 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CB00052AEC8F810006B342 /* SegmentedControl.swift */; };
-		28CB000B2AEC94080006B342 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 28CB000A2AEC94080006B342 /* Alamofire */; };
 		28CBFFF42AEC85260006B342 /* AviationDataEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFFF32AEC85260006B342 /* AviationDataEndpoint.swift */; };
 		28CBFFF72AEC85310006B342 /* AviationDataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFFF62AEC85310006B342 /* AviationDataGateway.swift */; };
 		28CBFFFB2AEC85430006B342 /* AviationDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CBFFFA2AEC85430006B342 /* AviationDataResponse.swift */; };
@@ -50,7 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28CB000B2AEC94080006B342 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +279,6 @@
 			);
 			name = "Airport Finder";
 			packageProductDependencies = (
-				28CB000A2AEC94080006B342 /* Alamofire */,
 			);
 			productName = "Airport Finder";
 			productReference = 28924BEC2AEBFF0700044F4D /* Airport Finder.app */;
@@ -583,14 +580,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		28CB000A2AEC94080006B342 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28CB00092AEC94080006B342 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28924BE42AEBFF0700044F4D /* Project object */;
 }
